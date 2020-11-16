@@ -1,0 +1,29 @@
+{
+  "name": "protocol-adapter-tui",
+  "version": "1.0.0",
+  "description": "generater run, stop command as rrule of schedule DB",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enthusapp/dmxProtocolAdapterTUI.git"
+  },
+  "keywords": [
+    "ui",
+    "serial",
+    "DMX",
+    "ENTHUS"
+  ],
+  "author": "handohee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enthusapp/dmxProtocolAdapterTUI/issues"
+  },
+  "homepage": "https://github.com/enthusapp/dmxProtocolAdapterTUI#readme",
+  "dependencies": {
+    "serialport": "^7.1.5"
+  }
+}
