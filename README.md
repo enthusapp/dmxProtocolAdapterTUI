@@ -6,7 +6,7 @@ DMX Protocol Adapter 의 설정을 변경하는 어플리케이션입니다.
 마이크로 USB 케이블을 PC 와 Protocol-Adapter 사이에 연결합니다.
 
 ### 실행파일 다운로드
-Release 페이지에서 가장 마지막 `protocol-adapter.exe` 파일을 다운로드 합니다.
+[Release 페이지](https://github.com/enthusapp/dmxProtocolAdapterTUI/releases)에서 가장 마지막 `protocol-adapter.exe` 파일을 다운로드 합니다.
 
 ### 명령어
 #### 통신포트 설정
