@@ -1,7 +1,7 @@
 module.exports = {
   invert: {
     alias: 'i',
-    description: '데이터 반전',
+    description: '데이터 반전, 0 비활성화, 1 활성화',
     type: 'number',
   },
   '0to100': {
@@ -17,6 +17,11 @@ module.exports = {
   start: {
     alias: 's',
     description: 'RGB 샘플링 시작 채널 선택',
+    type: 'number',
+  },
+  input_watchdog: {
+    alias: 'w',
+    description: '미입력 자동 변환 타이밍 설정, 0 은 자동변환 비활성화',
     type: 'number',
   },
   port: {
