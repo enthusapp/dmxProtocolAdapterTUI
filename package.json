@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/enthusapp/dmxProtocolAdapterTUI#readme",
   "dependencies": {
-    "serialport": "^7.1.5"
+    "@serialport/parser-readline": "^9.0.1",
+    "serialport": "^9.0.2",
+    "yargs": "^16.1.1"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
