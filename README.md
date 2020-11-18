@@ -3,15 +3,27 @@ DMX Protocol Adapter 의 설정을 변경하는 어플리케이션입니다.
 
 ## 설치
 ### 실행파일 다운로드
-[Release 페이지](https://github.com/enthusapp/dmxProtocolAdapterTUI/releases)에서 가장 마지막 버젼의 Release 를 찾아 `protocol-adapter.exe` 파일을 다운로드 합니다.
+[Release 페이지](https://github.com/enthusapp/dmxProtocolAdapterTUI/releases)에서 가장 마지막 버젼의 Release 를 찾아 `dmxProtocolAdapterTUI.zip` 파일을 다운로드 하고,
+압축을 해제합니다.
 
 ## 사용방법
 ### 연결
 마이크로 USB 케이블을 PC 와 Protocol-Adapter 사이에 연결합니다.
 
 ### 명령어
+### 명령어 입력 창 열기
+압축을 해제한 폴더를 윈도우즈 파일 브라우저로 열고 경로창에 `cmd .` 을 입력후 엔터를 누르면 명령어 입력 창이 나타납니다.
+
+[윈도우즈 파일 브라우저](img/windowsFileBrowser.jpg)
+
+[cmd 입력](img/cmd.jpg)
+
+[commandLineInput](img/commandLineInput.jpg)
+
+명령어 입력 창에서 이어지는 설명에 따라 통신포트를 설정하고, 원하는 옵션을 입력하여 protocol-adapter 의 동작을 제어할 수 있습니다.
+
 #### 통신포트 설정
-PC 장치관리자에서 마이크로 USB 에 할당된 COM Port 를 확이하고 아래와 같이 입력합니다.
+PC 장치관리자에서 마이크로 USB 에 할당된 COM Port 를 확인하고 아래와 같이 입력합니다.
 
 ```
 protocol-adapter.exe -p COM3
