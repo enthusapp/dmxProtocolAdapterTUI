@@ -60,6 +60,8 @@ protocol-adapter.exe -p COM3 -w 5.1
 
 ## 개발
 ### Packaging
+`pkg` 명령어로 exe 파일 생성하고 `node_modules` 폴더와 같이 압축하여 
+
 ```
 pkg . -t win
 ```
