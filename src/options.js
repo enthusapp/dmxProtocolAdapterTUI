@@ -14,9 +14,14 @@ module.exports = {
     description: 'RGB 채널 순서 선택 ex) RGB, RBG, GRB, ...',
     type: 'string',
   },
+  read: {
+    alias: 'r',
+    description: '1 분의 DMX 채널 로그 읽어오기',
+    type: 'boolean',
+  },
   start: {
     alias: 's',
-    description: 'RGB 샘플링 시작 채널 선택',
+    description: '샘플링 시작 채널 선택',
     type: 'number',
   },
   input_watchdog: {

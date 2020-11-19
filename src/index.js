@@ -13,10 +13,11 @@ const { argv } = yargs
 const msg = { start_channel: argv.s, ...smoothMap.get(argv.z) };
 
 if (argv.i !== undefined) msg.invert = argv.i ? 1 : 0;
+if (argv.r !== undefined) msg.read = argv.r ? 1 : 0;
 if (argv.c !== undefined) msg.rgb_order = rgbOrderStr2Code(argv.c);
 if (argv.w !== undefined) msg.input_watchdog = argv.w * 1000;
 
 sender(argv.p, JSON.stringify(msg), err => {
   if (err) console.error(err);
-  process.exit();
+  if (!msg.read) process.exit();
 });
