@@ -9,11 +9,7 @@ module.exports = (portName, msg, cb) => {
 
   const parser = port.pipe(new Readline({ delimiter: '\n' }));
 
-  parser.on('data', data => {
-    const ret = JSON.parse(data);
-    console.log(ret);
-    cb();
-  });
+  parser.on('data', data => cb(null, data));
 
   port.once('open', () => {
     console.log(`${portName} opened`);
